@@ -13,6 +13,11 @@ const server = net.createServer();
 const commands = {};
 
 // user constructor
+/**
+ *
+ *
+ * @param {*} socket
+ */
 function User(socket){
   let id = uuid();
   this.id = id;
@@ -45,3 +50,4 @@ server.on('connection', (socket) => {
 
   module.exports = {server, parse, dispatchAction, socketPool, commands};
   
+
