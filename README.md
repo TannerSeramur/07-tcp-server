@@ -1,42 +1,32 @@
 ![CF](http://i.imgur.com/7v5ASc8.png) LAB
 =================================================
 
-## Project Name
+## Project Name 07-tcp-server
 
-### Author: Student/Group Name
+### Author: Tanner Seramur
 
 ### Links and Resources
-* [repo](http://xyz.com)
+* [repo](https://github.com/TannerSeramur/07-tcp-server)
 * [travis](http://xyz.com)
-* [back-end](http://xyz.com)
-* [front-end](http://xyz.com)
+
 
 ### Modules
-#### `modulename.js`
+#### `uuid`
+#### `net`
 ##### Exported Values and Methods
 
-###### `foo(thing) -> string`
-Usage Notes or examples
+###### `commands['@all'] =  (data, userId)`
+type `@all <message-here>` to send a message in the chat for all users to see.
 
-###### `bar(array) -> array`
-Usage Notes or examples
+###### `commands['@nick'] =  (data, userId)`
+type `@nick <new-name-here>` to change you user ID to something custom. 
 
-### Setup
-#### `.env` requirements
-* `PORT` - Port Number
-* `MONGODB_URI` - URL to the running mongo instance/db
+###### `commands['@list'] = (data,userId)`
+type `@list all` to list all users currently in the chat. 
 
-#### Running the app
-* `npm start`
-* Endpoint: `/foo/bar/`
-  * Returns a JSON object with abc in it.
-* Endpoint: `/bing/zing/`
-  * Returns a JSON object with xyz in it.
+##### `commands['@quit']`
+type @quit to disconnect from chat
 
-#### Tests
-* How do you run tests?
-* What assertions were made?
-* What assertions need to be / should be made?
+##### `commands['@quit']`
+type `@dm <to-username> <message>` to send a direct message to a user. 
 
-#### UML
-Link to an image of the UML for your application and response to events
