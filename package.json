@@ -12,6 +12,7 @@
   "license": "ISC",
   "dependencies": {
     "net": "^1.0.2",
+    "require-directory": "^2.1.1",
     "sockets": "^0.4.2",
     "uuid": "^3.2.1"
   }
